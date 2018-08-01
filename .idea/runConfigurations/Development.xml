@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Development" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="APP_ID" value="3wxH0NJISQlRqB6t0zodwq6d" />
+      <env name="MASTER_KEY" value="mrZX7OC7pRxVLdb6Hgj91HSw" />
+      <env name="PRODUCTION" value="false" />
+      <env name="SERVER_URL" value="http://localhost:1337/parse" />
+      <env name="DATABASE_URL" value="postgres://onvpokafwxusfw:d391d6e57b416a9d61327936cc94612c61b8137f9d665a7c3fb0866be84ffe65@ec2-54-217-235-16.eu-west-1.compute.amazonaws.com:5432/da1ukm57legotc?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+    </envs>
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+      <browser url="http://localhost:3000/" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
