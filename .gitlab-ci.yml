@@ -1,0 +1,7 @@
+development:
+  type: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=projects-backend --api-key=$HEROKU_KEY
+  only:
+  - master
