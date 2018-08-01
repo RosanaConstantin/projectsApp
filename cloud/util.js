@@ -9,6 +9,7 @@
         entity: {
             Role: Parse.Object.extend('Role'),
             User: Parse.User,
+            Project: Parse.Project,
             Pointer: function (className, objectId) {
                 this["__type"] = "Pointer";
                 this["className"] = className;

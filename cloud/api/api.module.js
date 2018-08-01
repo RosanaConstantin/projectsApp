@@ -7,6 +7,7 @@
  */
 (function () {
     var user = require("./User/user.module");
+    var project = require("./Project/project.module");
 
     const MODULE_PREFIX = 'api-';
 
@@ -16,6 +17,7 @@
 
             // Actions initialize
             user.initialize(MODULE_PREFIX);
+            project.initialize(MODULE_PREFIX);
             return this;
         }
     };
