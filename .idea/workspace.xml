@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108b961a-7f49-4c78-8d8c-6b1e675f5e11" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud/api/Project/hooks/project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud/api/Project/project.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/api/Project/project.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/api/User/user.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/api/User/user.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61802906">
+    <splitter split-orientation="horizontal" split-proportion="0.85714287">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                <state relative-caret-position="110">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -36,25 +35,25 @@
             <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.module.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
-                  <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+                  <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user.actions.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="user.actions.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cloud/api/User/user.actions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                <state relative-caret-position="106">
+                  <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="project.actions.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="project.actions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.actions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+                <state relative-caret-position="269">
+                  <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -63,7 +62,7 @@
             <entry file="file://$PROJECT_DIR$/cloud/api/Project/hooks/project.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="340">
-                  <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+                  <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -71,8 +70,8 @@
           <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cloud/util.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+                <state relative-caret-position="51">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -81,7 +80,7 @@
             <entry file="file://$PROJECT_DIR$/cloud/api/User/user.util.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                  <caret line="20" selection-start-line="20" selection-end-line="20" />
                 </state>
               </provider>
             </entry>
@@ -132,6 +131,7 @@
     <findStrings>
       <find>session</find>
       <find>user.get('sessionToken')</find>
+      <find>userT</find>
     </findStrings>
     <replaceStrings>
       <replace>user.getSessionToken();</replace>
@@ -152,14 +152,14 @@
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/cloud/api/User/user.module.js" />
         <option value="$PROJECT_DIR$/cache.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/cloud/api/api.module.js" />
         <option value="$PROJECT_DIR$/cloud/api/User/user.util.js" />
         <option value="$PROJECT_DIR$/cloud/api/Project/project.module.js" />
         <option value="$PROJECT_DIR$/cloud/api/Project/hooks/project.js" />
         <option value="$PROJECT_DIR$/cloud/api/User/user.actions.js" />
-        <option value="$PROJECT_DIR$/cloud/api/Project/project.actions.js" />
         <option value="$PROJECT_DIR$/cloud/util.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/cloud/api/Project/project.actions.js" />
       </list>
     </option>
   </component>
@@ -310,26 +310,34 @@
       <option name="project" value="LOCAL" />
       <updated>1533168096102</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added project endpoints functionalities">
+      <created>1533172395929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533172395929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18288000" />
+    <option name="totallyTimeSpent" value="27826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1593" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13483146" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.42735043" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.42165244" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32905984" />
       <window_info id="npm" order="5" side_tool="true" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32763532" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3931624" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3974359" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
@@ -386,18 +394,34 @@
     <MESSAGE value="created crud endpoints for projects" />
     <MESSAGE value="deleted code" />
     <MESSAGE value="fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
+    <MESSAGE value="added project endpoints functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="added project endpoints functionalities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="6" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>project.get('name')</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>reason</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user.get('type')</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>mountPath</expression-string>
         <language-id>JavaScript</language-id>
@@ -692,42 +716,14 @@
     <entry file="file://$PROJECT_DIR$/cloud/api/User/user.util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/api/Project/hooks/project.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -738,10 +734,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/api/User/user.actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="106">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/api/Project/project.actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
         </state>
       </provider>
     </entry>

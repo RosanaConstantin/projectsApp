@@ -22,16 +22,18 @@
         }
 
         var user = request.user;
+        var sessionToken = user.getSessionToken();
         var Project = entity.Project;
         var project = new Project();
 
         project.set('name', request.params['name']);
         project.set('client', request.params['client']);
+        project.set("parent", new entity.Pointer("_User", user.id))
 
-        if(user.get('type') === util.getConstantValue('UserType', 'User')){
-            project.set('userId', user.id)
-        }
-        project.save(null, {useMasterKey: true})
+        var acl = new Parse.ACL(user);
+        project.setACL(acl);
+
+        project.save(null, {sessionToken:sessionToken})
             .then(function (project) {
                 response.success(project);
             })
@@ -115,13 +117,15 @@
         var sessionToken = user.getSessionToken();
         var query = new Parse.Query(entity.Project);
         var userType = user.get('type');
+        var options = {};
 
-        if(userType === util.getConstantValue('UserType', 'User')){
-            query.equalTo('userId', user.id);
+        if(userType === util.getConstantValue('UserType', 'Admin')){
+            options.useMasterKey = true;
+        } else {
+            options.sessionToken = sessionToken;
         }
-
         query
-            .find({sessionToken: sessionToken})
+            .find(options)
             .then(function (projects) {
                 response.success(projects);
             })
