@@ -11,6 +11,10 @@
     };
 
     function _createUser(request, response) {
+        // if (!userUtil.validateUserRequest(request, response)) {
+        //     return;
+        // }
+
         if (!util.validateRequestParams(request, response, ['email', 'password'])) {
             return;
         }
@@ -20,6 +24,12 @@
         user.set('email', requestParams['email']);
         user.set('username', requestParams['email']);
         user.set('password', requestParams['password']);
+
+        if(request.params['type']){
+            user.set('type', util.getConstantValue('UserType', 'Admin'));
+        } else {
+            user.set('type', util.getConstantValue('UserType', 'User'));
+        }
 
         user.signUp(null, {useMasterKey: true})
             .then(function (user) {

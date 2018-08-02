@@ -1,6 +1,14 @@
 
 (function () {
     var _ = require('underscore');
+
+    var configCache = {
+        'UserType': {
+            'User': 1,
+            'Admin': 2
+        }
+    };
+
     module.exports = {
         version: '1.0.0',
         initialize: function () {
@@ -9,7 +17,7 @@
         entity: {
             Role: Parse.Object.extend('Role'),
             User: Parse.User,
-            Project: Parse.Project,
+            Project: Parse.Object.extend('Project'),
             Pointer: function (className, objectId) {
                 this["__type"] = "Pointer";
                 this["className"] = className;
@@ -38,6 +46,12 @@
 
             return !response.errorTriggered;
         },
+        getConfig: function (key) {
+            return configCache[key];
+        },
+        getConstantValue: function (configKey, constantKey) {
+            return parseFloat(_getConfigItem(configKey, constantKey, true));
+        },
         updateObject: function (object, objectKeys, changes) {
             _.forEach(objectKeys, function (key) {
                 if (!!changes[key]) {
@@ -48,4 +62,20 @@
             return object;
         },
     };
+
+    function _getConfigItem(configKey, item, isKey) {
+        var config = module.exports.getConfig(configKey);
+        if (isKey) {
+            return config[item];
+        } else {
+            for (var key in config) {
+                if (config.hasOwnProperty(key)) {
+                    var value = config[key];
+                    if (value === item) {
+                        return key;
+                    }
+                }
+            }
+        }
+    }
 }());
