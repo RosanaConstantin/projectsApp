@@ -9,10 +9,10 @@
         initialize: function (parentPrefix) {
             var prefix = parentPrefix + MODULE_PREFIX;
 
-            Parse.Cloud.define(prefix + 'create', userActions.create);
-            Parse.Cloud.define(prefix + 'update', userActions.update);
-            Parse.Cloud.define(prefix + 'get', userActions.get);
-            Parse.Cloud.define(prefix + 'delete', userActions.delete);
+            Parse.Cloud.define(prefix + 'create', projectActions.create);
+            Parse.Cloud.define(prefix + 'update', projectActions.update);
+            Parse.Cloud.define(prefix + 'get', projectActions.get);
+            Parse.Cloud.define(prefix + 'delete', projectActions.delete);
 
             return this;
         }
