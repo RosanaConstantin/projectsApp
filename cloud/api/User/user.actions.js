@@ -11,9 +11,6 @@
     };
 
     function _createUser(request, response) {
-        // if (!userUtil.validateUserRequest(request, response)) {
-        //     return;
-        // }
 
         if (!util.validateRequestParams(request, response, ['email', 'password'])) {
             return;
