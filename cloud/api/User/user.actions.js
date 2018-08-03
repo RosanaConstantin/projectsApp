@@ -2,6 +2,7 @@
 (function () {
     var util = require('../../util'),
         userUtil = require('./user.util'),
+        client = require('../../../index').client,
         entity = util.entity;
 
     module.exports = {
@@ -11,7 +12,6 @@
     };
 
     function _createUser(request, response) {
-
         if (!util.validateRequestParams(request, response, ['email', 'password'])) {
             return;
         }
@@ -30,6 +30,8 @@
 
         user.signUp(null, {useMasterKey: true})
             .then(function (user) {
+                client.set('objectId', user.id);
+                client.expire('objectId', 300);
                 response.success(user);
             })
             .catch(function (reason) {
@@ -45,6 +47,8 @@
 
         Parse.User.logIn(params['email'], params['password'])
             .then(function (user) {
+                client.set('objectId', user.id);
+                client.expire('objectId', 300);
                 response.success(user);
             })
             .catch(function (reason) {
