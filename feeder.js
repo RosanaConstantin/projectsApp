@@ -6,7 +6,7 @@ Channel(queue, function(err, channel, conn) {
     }
     else {
         console.log('channel and queue created');
-        var work = 'make me a sandwich';
+        var work = 'Project get from database';
         channel.sendToQueue(queue, encode(work), {
             persistent: true
         });
