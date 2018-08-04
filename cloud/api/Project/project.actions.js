@@ -9,6 +9,7 @@
         create: _createProject,
         update: _updateProject,
         get: _getProject,
+        getAll: _getProjects,
         delete: _deleteProject,
     };
 
@@ -112,6 +113,36 @@
         if (!userUtil.validateUserRequest(request, response)) {
             return;
         }
+        
+         if (!util.validateRequestParams(request, response, ['projectId'])) {
+            return;
+        }
+
+        var user = request.user;
+        var sessionToken = user.getSessionToken();
+        var query = new Parse.Query(entity.Project);
+        var userType = user.get('type');
+        var options = {};
+
+        if(userType === util.getConstantValue('UserType', 'Admin')){
+            options.useMasterKey = true;
+        } else {
+            options.sessionToken = sessionToken;
+        }
+        query
+            .get(request.params['projectId'], options)
+            .then(function (project) {
+                response.success(project);
+            })
+            .then(function (reason) {
+                response.error(400, reason.message);
+            })
+    }
+
+    function _getProjects(request, response) {
+        if (!userUtil.validateUserRequest(request, response)) {
+            return;
+        }
 
         var user = request.user;
         var sessionToken = user.getSessionToken();
@@ -133,5 +164,4 @@
                 response.error(400, reason.message);
             })
     }
-
 }());
