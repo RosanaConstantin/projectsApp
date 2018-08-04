@@ -12,7 +12,8 @@
             Parse.Cloud.define(prefix + 'create', projectActions.create);
             Parse.Cloud.define(prefix + 'update', projectActions.update);
             Parse.Cloud.define(prefix + 'get', projectActions.get);
-            Parse.Cloud.define(prefix + 'delete', projectActions.delete);
+            Parse.Cloud.definte(prefix + 'get-all', projectActions.getAll);
+            Parse.Clouddefine(prefix + 'delete', projectActions.delete);
 
             return this;
         }
