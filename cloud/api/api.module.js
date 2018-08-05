@@ -1,10 +1,4 @@
-/**
- * API Module
- * @name API Module
- * @namespace
- * @author Bogdan Niculescu bogdan.niculescu@ab4.systems
- *
- */
+
 (function () {
     var user = require("./User/user.module");
     var project = require("./Project/project.module");
